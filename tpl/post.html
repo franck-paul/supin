@@ -280,13 +280,6 @@
 
 <div id="sidebar">
   <div id="blogmargin" class="margin">
-		<tpl:Entries category="Photos" lastn="1" ignore_pagination="1" no_context="1">
-			<ul>
-				<tpl:PhotoblogNav nbEntries="4" dir="-1" reverse="0">
-		    	<li class="thumbnail"><a href="{{tpl:EntryURL}}" title="{{tpl:EntryTitle}}" style="background-image: url({{tpl:PhotoblogThumbURL type="bw"}});width: {{tpl:PhotoblogThumbSize dimension="width"}}px;height: {{tpl:PhotoblogThumbSize dimension="height"}}px;"><img src="{{tpl:BlogThemeURL}}/images/spacer.gif" style="width: {{tpl:PhotoblogThumbSize dimension="width"}}px;height: {{tpl:PhotoblogThumbSize dimension="height"}}px;" alt="transparent"/></a></li>
-		  		</tpl:PhotoblogNav>
-			</ul>
-		</tpl:Entries>
   </div>
   <div id="blognav">
 	{{tpl:Widgets type="nav"}}

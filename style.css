@@ -42,15 +42,10 @@ html {
 
 body { 
 	font-family: "Candara", "Lucida grande", Lucida, Verdana, sans-serif;
-/*	font-size: 86%;
-	font-size-adjust: 0.5; */
 	font-size: 92%;
 	line-height: 140%;
 	color: #000;
 	background-color: #fff;
-/* Rendu de texte */
-	text-rendering: optimizelegibility;
-	-moz-font-feature-setting : "liga=1,clig=1,dlig=1,hlig=1,rlig=1";
 }
  
 h1 { }
@@ -521,9 +516,8 @@ ul.post-tags li {
 	background: #fff url(images/magnifier.png) no-repeat scroll 0.5em center;
 	border: 1px solid #333;
 	padding: 0.25em 0.25em 0.25em 2.5em;
-/*	width: 12em; */
-} /* ou #search #q */
-#search input[type=submit] { } /* ou #search .submit */
+}
+#search input[type=submit] { }
 
 #topnav { }
 .topnav-arch { }
@@ -780,58 +774,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 	font-weight: normal;
 }
 
-/* Plugin Photoblog */
-
-#altmargin {
-	text-align: center;
-}
-
-#sidebar .margin {
-	position: absolute;
-	margin-top: 64px;
-	width: 285px;
-	left: 48px;
-	text-align: center;
-}
-
-#altmargin ul, #sidebar .margin ul {
-	list-style-type: none;
-	margin: 0;
-}
-
-#altmargin ul li, #sidebar .margin ul li {
-	padding: 1px;
-	margin: 4px;
-	float: left;
-	border: 1px solid #999;
-}
-
-#altmargin img, #sidebar .margin img {
-}
-
-#altmargin a img, #sidebar .margin a img {
-	border: none;
-}
-
-#altmargin .thumbnail a, #sidebar .margin .thumbnail a {
-	background-position: bottom right;
-	background-color: transparent;
-	background-repeat: no-repeat;
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	border: 1px solid #ddd;
-}
-
-#altmargin .thumbnail a:hover, #sidebar .margin .thumbnail a:hover {
-	background-position: top left;
-}
-
 /* Divers */
-
-div.mosaique {
-	text-align: center;
-}
 
 #content span.img-noborder {
 	border: none;
