@@ -1,0 +1,78 @@
+.jstEditor {
+}
+
+.jstEditor textarea, .jstEditor iframe {
+	border: 1px solid #333333;
+}
+
+.jstHandle {
+	height: 16px;
+	font-size: 0.1em;
+	cursor: s-resize;
+	background: transparent url(img/resizer.png) no-repeat 45% 50%;
+}
+
+.jstElements {
+	padding: 3px 3px 3px 13em;
+	text-align: left;
+}
+
+.jstElements button {
+	margin: 2px 4px 2px 0;
+	padding: 5px 5px 5px 26px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #333333;
+	border-radius: 15px;
+	background-color: #EBEDFA;
+	background-position: 5px 50%;
+	background-repeat: no-repeat;
+	color: #448;	
+}
+.jstElements button:after {
+	content: " "attr(title)" ";
+}
+.jstElements button:hover {
+	border-color: #999999;
+}
+.jstElements button span {
+}
+.jstElements span {
+	display: none;
+}
+
+.jstSpacer {
+}
+
+/* Buttons
+-------------------------------------------------------- */
+.jstb_strong {
+	background-image: url(img/bt_strong.png);
+}
+.jstb_em {
+	background-image: url(img/bt_em.png);
+}
+.jstb_ins {
+	background-image: url(img/bt_ins.png);
+}
+.jstb_del {
+	background-image: url(img/bt_del.png);
+}
+.jstb_quote {
+	background-image: url(img/bt_quote.png);
+}
+.jstb_code {
+	background-image: url(img/bt_code.png);
+}
+.jstb_br {
+	background-image: url(img/bt_br.png);
+}
+.jstb_ul {
+	background-image: url(img/bt_ul.png);
+}
+.jstb_ol {
+	background-image: url(img/bt_ol.png);
+}
+.jstb_link {
+	background-image: url(img/bt_link.png);
+}

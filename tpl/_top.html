@@ -1,0 +1,14 @@
+<div id="top">
+  <h1><span><a href="{{tpl:BlogURL}}" title="{{tpl:BlogDescription}}">{{tpl:BlogName encode_html="1"}}</a></span></h1>
+  
+  <!-- # --BEHAVIOR-- publicTopAfterContent -->
+  {{tpl:SysBehavior behavior="publicTopAfterContent"}}
+</div>
+
+<p id="prelude"><a href="#main">{{tpl:lang To content}}</a> |
+<a href="#blognav">{{tpl:lang To menu}}</a> |
+<a href="#search">{{tpl:lang To search}}</a></p>
+
+<tpl:Entries category="Photos" lastn="1" ignore_pagination="1" no_context="1">
+  {{tpl:EntryImages size="s" length="1" legend="entry" link="entry" html_tag="div"}}
+</tpl:Entries>
