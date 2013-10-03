@@ -1,23 +1,21 @@
 <?php
 # -- BEGIN LICENSE BLOCK ----------------------------------
-#
-# This file is part of Supin, a Dotclear 2 theme.
+# This file is part of Supin, a theme for Dotclear 2.
 #
 # Copyright (c) Franck Paul and contributors
-# http://open-time.net/
-#
+# carnet.franck.paul@gmail.com
 #
 # Licensed under the GPL version 2.0 license.
-# See LICENSE file or
+# A copy of this license is available in LICENSE file or at
 # http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
 # -- END LICENSE BLOCK ------------------------------------
+
+if (!defined('DC_RC_PATH')) { return; }
 
 $core->addBehavior('publicPrepend',array('behaviorSupinTheme','publicPrepend'));
 $core->addBehavior('templateBeforeBlock',array('behaviorSupinTheme','templateBeforeBlock'));
 
 $core->tpl->addValue('Else',array('templateSupinTheme','templateElse'));
-
 
 class behaviorSupinTheme
 {
@@ -44,13 +42,14 @@ class templateSupinTheme
 	{
 		return '<?php else: ?>';
 	}
-
 }
 
-class contextNav 
+class contextNav
 {
-	public static function getNextPosts($post_id, $ts, $dir, $nb, $nav, $navParam)
+	public static function getNextPosts($post_id,$ts,$dir,$nb,$nav,$navParam)
 	{
+		global $_ctx;
+
 		if ($dir > 0) {
 			$sign = '>';
 			$order = 'ASC';
@@ -63,10 +62,7 @@ class contextNav
 		$dt = date('YmdHis', (integer) $ts);
 
 		// Récupération catégorie du billet courant (ctx)
-		global $_ctx;
 		$params['cat_url'] = $_ctx->posts->cat_url;
-
-//		$params['cat_url'] = 'Photos';
 
 		$params['limit'] = $nb;
 		$params['order'] = 'post_dt ' . $order;
@@ -83,5 +79,3 @@ class contextNav
 		return $rs;
 	}
 }
-
-?>
