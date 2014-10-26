@@ -27,7 +27,7 @@
 	background-color: #EBEDFA;
 	background-position: 5px 50%;
 	background-repeat: no-repeat;
-	color: #448;	
+	color: #448;
 }
 .jstElements button:after {
 	content: " "attr(title)" ";

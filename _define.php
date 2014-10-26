@@ -14,7 +14,10 @@ if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
 	/* Name */			"Supin",
-	/* Description*/		"Supin based on Aorakit 1B by Kozlika",
-	/* Author */			"Franck Paul",
-	/* Version */			'1.1'
+	/* Description*/	"Supin based on Aorakit 1B by Kozlika",
+	/* Author */		"Franck Paul",
+	/* Version */		'1.2',
+	array(
+		/* Type */		'type' =>			'theme'
+	)
 );
