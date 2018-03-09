@@ -1,19 +1,4 @@
 /*
-
-# -- BEGIN LICENSE BLOCK ----------------------------------
-#
-# This file is part of Supin, a Dotclear 2 theme.
-#
-# Copyright (c) Franck Paul and contributors
-# http://open-time.net/
-#
-#
-# Licensed under the GPL version 2.0 license.
-# See LICENSE file or
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
-# -- END LICENSE BLOCK ------------------------------------
-
 Palette :
 
 Fond : #fff (blanc)
@@ -23,762 +8,724 @@ Lien : #5967c2 (bleu)
 Survol : #b54267 (rose)
 
 Prélude, fond code et boutons : #ebedfa (bleu ciel)
-
 */
 
 /* -----------------------------------------------------------------
-	1. STRUCTURE
+  1. STRUCTURE
 ------------------------------------------------------------------ */
 
 @import url(layout.css);
-
 /* ------------------------------------------------------------
-	2. BALISES HTML PAR DEFAUT
+  2. BALISES HTML PAR DEFAUT
 ------------------------------------------------------------- */
 
 html {
-	font-size : 100.01%
+  font-size: 100.01%
 }
-
 body {
-	font-family: "Candara", "Lucida grande", Lucida, Verdana, sans-serif;
-	font-size: 92%;
-	line-height: 140%;
-	color: #000;
-	background-color: #fff;
+  font-family: "Candara", "Lucida grande", Lucida, Verdana, sans-serif;
+  font-size: 92%;
+  line-height: 140%;
+  color: #000;
+  background-color: #fff;
 }
-
-h1 { }
-h2 { }
-h3 { clear: both;}
-h4 { clear: both;}
-h5 { clear: both;}
-h6 { clear: both;}
-
+h1 {}
+h2 {}
+h3 {
+  clear: both;
+}
+h4 {
+  clear: both;
+}
+h5 {
+  clear: both;
+}
+h6 {
+  clear: both;
+}
 p {
-	margin: 1em 0;
+  margin: 1em 0;
 }
-img { }
-sup { }
-abbr, acronym { }
-
-blockquote, q { }
+img {}
+sup {}
+abbr, acronym {}
+blockquote, q {}
 blockquote {
-	background: transparent url(images/quote.gif) no-repeat scroll left top;
-	margin: 1em;
-	padding: 0 0 0 70px;
-	font-style: italic;
+  background: transparent url(images/quote.gif) no-repeat scroll left top;
+  margin: 1em;
+  padding: 0 0 0 70px;
+  font-style: italic;
 }
 blockquote em {
-	font-style: normal;
+  font-style: normal;
 }
-cite { }
-
+cite {}
 [lang="fr"] q, q[lang="fr"] {
-	quotes: "« " " »";
+  quotes: "« " " »";
 }
-
-ul { }
-ol { }
-dl { }
-
-form { }
+ul {}
+ol {}
+dl {}
+form {}
 fieldset {
-	border: none;
-	display: block;
-	margin: 0;
-	padding: 0;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 fieldset p {
-	margin: 0 0 0.5em 0;
+  margin: 0 0 0.5em 0;
 }
 input {
-	border-color: #333;
-	border-width: 1px;
-	border-style: solid;
-	padding: 0.25em 0.6em;
-	background: #ebedfa;
+  border-color: #333;
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.25em 0.6em;
+  background: #ebedfa;
 }
 input:hover {
-	border-color: #000;
+  border-color: #000;
 }
-label { }
+label {}
 textarea {
-	width: 95%;
+  width: 95%;
 }
-
 a {
-	color: #5967c2;
-	text-decoration: none;
-	outline: none;
+  color: #5967c2;
+  text-decoration: none;
+  outline: none;
 }
-a:link { }
-a:visited { }
+a:link {}
+a:visited {}
 a:hover {
-	color: #b54267;
+  color: #b54267;
 }
-a:focus { }
+a:focus {}
 a[hreflang]:after {
-	content: "\0000a0[" attr(hreflang) "]";
+  content: "\0000a0[" attr(hreflang) "]";
 }
 a[hreflang|="fr"]:after {
-	content: "";
+  content: "";
 }
 a[hreflang] {
-	content: normal !important;
+  content: normal !important;
 }
-a img { }
-
+a img {}
 code, pre {
-	font-family: "liberation mono", "Andale Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
-	font-size: 1em;
-	font-size-adjust: 0.5;
+  font-family: "liberation mono", "Andale Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
+  font-size: 1em;
+  font-size-adjust: 0.5;
 }
 code {
-	background: #ebedfa;
-	padding: 3px 5px 2px;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
+  background: #ebedfa;
+  padding: 3px 5px 2px;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
 }
 pre {
-	overflow: auto;
-	display: block;
-	border: solid 1px #333333;
-	padding: 10px 20px 10px 30px;
-	margin: 1em 1em 1em 0;
-	text-align: left;
-	line-height: 125%;
-	white-space: pre-wrap;       /* css-3 */
-	white-space: -moz-pre-wrap important;  /* Mozilla, since 1999 */
-	white-space: -pre-wrap;      /* Opera 4-6 */
-	white-space: -o-pre-wrap;    /* Opera 7 */
-	word-wrap: break-word;       /* Internet Explorer 5.5+ */
+  overflow: auto;
+  display: block;
+  border: solid 1px #333333;
+  padding: 10px 20px 10px 30px;
+  margin: 1em 1em 1em 0;
+  text-align: left;
+  line-height: 125%;
+  white-space: pre-wrap;
+  /* css-3 */
+  white-space: -moz-pre-wrap important;
+  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;
+  /* Opera 4-6 */
+  white-space: -o-pre-wrap;
+  /* Opera 7 */
+  word-wrap: break-word;
+  /* Internet Explorer 5.5+ */
 }
-
 hr {
-	background-color: #5967c2;
-	color: #5967c2;
-	border: 0 none;
-	height: 1px;
-	margin: 2em 10em;
+  background-color: #5967c2;
+  color: #5967c2;
+  border: 0 none;
+  height: 1px;
+  margin: 2em 10em;
 }
-
 sup {
-	line-height: 0.6em;
+  line-height: 0.6em;
 }
-
-
 /* ------------------------------------------------------------
-	3. PAGE
+  3. PAGE
 ------------------------------------------------------------- */
 
-#page { }
-
-
+#page {}
 /* ------------------------------------------------------------
-	4. HAUT DE PAGE
+  4. HAUT DE PAGE
 ------------------------------------------------------------- */
 
 #top {
-	background: transparent url('images/title.png') no-repeat right 50%;
-	text-align: right;
-	margin-right: 40px;
+  background: transparent url('images/title.png') no-repeat right 50%;
+  text-align: right;
+  margin-right: 40px;
 }
-#top h1 { }
+#top h1 {}
 #top h1 a {
-	color: #fff;
-	text-align: left;
+  color: #fff;
+  text-align: left;
 }
 #prelude {
-	color: #fff;
+  color: #fff;
 }
 #prelude a {
-	color: #ebedfa;
-	text-decoration: none;
+  color: #ebedfa;
+  text-decoration: none;
 }
-
 /* ------------------------------------------------------------
     4 bis. IMAGE HAUT GAUCHE
 ------------------------------------------------------------- */
 
 .outer_landscape img, .outer_portrait img {
-	padding: 4px;
-	border: 1px solid #999;
-	-moz-box-shadow: 0 0 1em #999;
-	-webkit-box-shadow: 0 0 1em #999;
-	box-shadow: 0 0 1em #999;
+  padding: 4px;
+  border: 1px solid #999;
+  -moz-box-shadow: 0 0 1em #999;
+  -webkit-box-shadow: 0 0 1em #999;
+  box-shadow: 0 0 1em #999;
 }
-
 .outer_landscape p, .outer_portrait p {
-	margin: 0;
+  margin: 0;
 }
-
 .outer_landscape a, .outer_portrait a {
-	color: #666;
-	font-size: 0.8em;
-	text-transform: uppercase;
-	text-decoration: none;
-	border: none;
+  color: #666;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
 }
-
 /* ------------------------------------------------------------
-	5. WRAPPER MAIN CONTENT
+  5. WRAPPER MAIN CONTENT
 ------------------------------------------------------------- */
 
-#wrapper { }
+#wrapper {}
 #main {
-	text-align: justify;
+  text-align: justify;
 }
-#content { }
-
+#content {}
 #content-info {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
 #content-info h2 {
-	color: #666;
+  color: #666;
 }
-#content-info p { }
+#content-info p {}
 #content-info .feed {
-	margin-left: 0;
+  margin-left: 0;
 }
-
 #subcategories {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
 #subcategories h3 {
-	color: #666;
+  color: #666;
 }
-
 #navlinks {
-	margin-left: 320px;
-	margin-right: 160px;
-	text-align: center;
-	padding: 10px;
-	background-color: #ebedfa;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+  margin-left: 320px;
+  margin-right: 160px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ebedfa;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
-
-.content-inner { }
-
+.content-inner {}
 .pagination {
-	margin-left: 320px;
-	margin-right: 160px;
-	margin-top: 96px;
-	text-align: center;
-	padding: 10px;
-	background-color: #ebedfa;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+  margin-left: 320px;
+  margin-right: 160px;
+  margin-top: 96px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ebedfa;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
-
-
 /* ------------------------------------------------------------
-	6. BILLETS
+  6. BILLETS
 ------------------------------------------------------------- */
 
 .post {
-	padding-top: 64px;
+  padding-top: 64px;
 }
 .post.first {
-	padding-top: 32px;
+  padding-top: 32px;
 }
-.post.odd { }
-
+.post.odd {}
 .post-title, .post-info, .post-tags, .post-excerpt, .post-content, .post-info-co, .read-it {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
-
 .post-title, .post-info, .post-tags, .post-info-co {
-	text-align: left;
+  text-align: left;
 }
-
 .post-content-wrapper {
-	position: relative;
-	margin-top: 36px;
+  position: relative;
+  margin-top: 36px;
 }
 .day-date {
-	position: absolute;
-	text-align: right;
-	width: 285px;
-	margin: 0;
+  position: absolute;
+  text-align: right;
+  width: 285px;
+  margin: 0;
 }
 .post-date {
-	position: absolute;
-	text-align: right;
-	width: 275px;
-	margin: 0;
-	padding-right: 20px;
-	border-right: 1px solid #5967c2;
+  position: absolute;
+  text-align: right;
+  width: 275px;
+  margin: 0;
+  padding-right: 20px;
+  border-right: 1px solid #5967c2;
 }
 .post-day {
-	font-size: 2em;
-	font-weight: bold;
-	color: #5967c2;
+  font-size: 2em;
+  font-weight: bold;
+  color: #5967c2;
 }
-.post-month {
-
-}
+.post-month {}
 .post-year {
-	font-size: 1.25em;
+  font-size: 1.25em;
 }
-
 .post-title {
-	font-size: 2.4em;
-	line-height: 1em;
+  font-size: 2.4em;
+  line-height: 1em;
 }
-.post-info { }
-.post-tags { }
-
+.post-info {}
+.post-tags {}
 .signature {
-	padding-top: 3em;
-	padding-bottom: 1em;
-	text-align: right;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: right;
 }
-
 ul.post-tags {
-	list-style-type: none;
-	padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
-
 ul.post-tags li {
-	display: inline;
-	margin: 0 1.2em 0 0;
-	padding: 0 0 2px 22px;
-	background: transparent url('images/tag.png') no-repeat left top;
+  display: inline;
+  margin: 0 1.2em 0 0;
+  padding: 0 0 2px 22px;
+  background: transparent url('images/tag.png') no-repeat left top;
 }
-
-.post-excerpt { }
-.post-content { }
-
-.read-it { }
-
-.footnotes { }
-.footnotes h4 { }
-
+.post-excerpt {}
+.post-content {}
+.read-it {}
+.footnotes {}
+.footnotes h4 {}
 .post-info-co {
-	text-align: right;
+  text-align: right;
 }
 .comment_count {
-	margin: 0 0 0 1.2em;
-	padding: 0 0 0 1.8em;
-	background: transparent url('images/balloon.png') no-repeat left top;
+  margin: 0 0 0 1.2em;
+  padding: 0 0 0 1.8em;
+  background: transparent url('images/balloon.png') no-repeat left top;
 }
 .ping_count {
-	margin: 0 0 0 1.2em;
-	padding: 0 0 0 1.8em;
-	background: transparent url('images/chain.png') no-repeat left top;
+  margin: 0 0 0 1.2em;
+  padding: 0 0 0 1.8em;
+  background: transparent url('images/chain.png') no-repeat left top;
 }
 .attach_count {
-	margin: 0 0 0 1.2em;
-	padding: 0 0 0 1.8em;
-	background: transparent url('images/box.png') no-repeat left top;
+  margin: 0 0 0 1.2em;
+  padding: 0 0 0 1.8em;
+  background: transparent url('images/box.png') no-repeat left top;
 }
-
 #attachments {
-	margin-top: 24px;
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-top: 24px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
-#attachments h3 { }
-#attachments ul { }
-#attachments ul li { }
-#attachments li.audio { }
-#attachments li.package { }
-#attachments li.text { }
-
-
-
+#attachments h3 {}
+#attachments ul {}
+#attachments ul li {}
+#attachments li.audio {}
+#attachments li.package {}
+#attachments li.text {}
 /* ------------------------------------------------------------
-	7. COMMENTAIRES, PINGS
+  7. COMMENTAIRES, PINGS
 ------------------------------------------------------------- */
 
 #comments, #pings, #comment-form, #ping-url, #comments-feed {
-	margin-top: 48px;
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-top: 48px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
-
-#comments { }
-#pings { }
-#pr { }
-#comment-form { }
-
-#comments h3 { }
-#pings h3 { }
-#pr h3 { }
-#comment-form h3 { }
-
+#comments {}
+#pings {}
+#pr {}
+#comment-form {}
+#comments h3 {}
+#pings h3 {}
+#pr h3 {}
+#comment-form h3 {}
 #comments dt, #pings dt {
-	margin-top: 32px;
-	padding: 10px;
+  margin-top: 32px;
+  padding: 10px;
 }
 #comments dt.me, #pings dt.me {
-	background-color: #ebedfa;
-	border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
+  background-color: #ebedfa;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
-
-.comment-number, .ping-number { }
-
-#comments dl { }
-#comments dt { }
-#comments dd { }
-#comments .first { }
-#comments .odd { }
-#comments .me { }
-
-#pings dl { }
-#pings dt { }
-#pings dd { }
-#pings .first { }
-#pings .odd { }
-#pings .me { }
-
-#pr dl { }
-#pr dd { }
-
-#comment-form fieldset { }
-.field { }
+.comment-number, .ping-number {}
+#comments dl {}
+#comments dt {}
+#comments dd {}
+#comments .first {}
+#comments .odd {}
+#comments .me {}
+#pings dl {}
+#pings dt {}
+#pings dd {}
+#pings .first {}
+#pings .odd {}
+#pings .me {}
+#pr dl {}
+#pr dd {}
+#comment-form fieldset {}
+.field {}
 .field label {
-	clear: left;
-	display: block;
-	float: left;
-	width: 13em;
+  clear: left;
+  display: block;
+  float: left;
+  width: 13em;
 }
-.field input { }
-.field textarea { }
-
-#comment-form input[type=submit] { }
-#comment-form input[type=reset] { }
-
-.form-help { }
-
-#ping-url { }
-
+.field input {}
+.field textarea {}
+#comment-form input[type=submit] {}
+#comment-form input[type=reset] {}
+.form-help {}
+#ping-url {}
 #comments-feed {
-	margin-top: 24px;
-	margin-left: 336px;
-	margin-right: 160px;
+  margin-top: 24px;
+  margin-left: 336px;
+  margin-right: 160px;
 }
-
-
 /* ------------------------------------------------------------
-	8. SIDEBAR & ALTERNATE
+  8. SIDEBAR & ALTERNATE
 ------------------------------------------------------------- */
 
 #alternate {
-	margin-top: 48px;
+  margin-top: 48px;
 }
-#altmargin { }
-#altcontent { }
-
+#altmargin {}
+#altcontent {}
 #sidebar {
-	margin-top: 48px;
+  margin-top: 48px;
 }
 #blogmargin {
-	margin-top: 48px;
+  margin-top: 48px;
 }
 #blognav {
-	padding-top: 48px;
+  padding-top: 48px;
 }
 #blogextra {
-	padding-top: 24px;
+  padding-top: 24px;
 }
-
 #sidebar h2 {
-	color: #666;
-	font-size: 1.1em;
+  color: #666;
+  font-size: 1.1em;
 }
-#sidebar h3 { }
+#sidebar h3 {}
 #sidebar ul {
-	margin: 0 0 0 1.2em;
-	padding: 0;
+  margin: 0 0 0 1.2em;
+  padding: 0;
 }
 #sidebar li {
-	list-style-position:outside;
-	margin: 0;
-	padding: 0;
-	text-indent: 0;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
 }
-
 /* boites du menu des widgets livres avec Dotclear */
-#search { }
-#search form { }
+
+#search {}
+#search form {}
 #search input[type=text] {
-	background: #fff url(images/magnifier.png) no-repeat scroll 0.5em center;
-	border: 1px solid #333;
-	padding: 0.25em 0.25em 0.25em 2.5em;
+  background: #fff url(images/magnifier.png) no-repeat scroll 0.5em center;
+  border: 1px solid #333;
+  padding: 0.25em 0.25em 0.25em 2.5em;
 }
-#search input[type=submit] { }
-
-#topnav { }
-.topnav-arch { }
-.topnav-home { }
-
-.selected { }
-.langs { }
-.categories { }
-.syndicate { }
+#search input[type=submit] {}
+#topnav {}
+.topnav-arch {}
+.topnav-home {}
+.selected {}
+.langs {}
+.categories {}
+.syndicate {}
 .syndicate ul {
-	list-style-type: none;
+  list-style-type: none;
 }
-.lastposts { }
-.lastcomments { }
-.text { }
-.links { }
-
-.tags { }
-.tags ul { }
-.tags li { }
+.lastposts {}
+.lastcomments {}
+.text {}
+.links {}
+.tags {}
+.tags ul {}
+.tags li {}
 /* a completer separement ou globalement pour le sidebar et la page
 specifique des tags avec les differentes class des tags en fonction
 de leur frequence - voir 9/ classes communes */
 
-
 /* ------------------------------------------------------------
-	9. FOOTER
+  9. FOOTER
 ------------------------------------------------------------- */
 
-#footer { }
-
+#footer {}
 #footer div {
-	float: left;
-	width: 200px;
-	padding-bottom: 30px;
+  float: left;
+  width: 200px;
+  padding-bottom: 30px;
 }
-
 #footer ul {
-	margin: 0 0 0 1.2em;
-	padding: 0;
+  margin: 0 0 0 1.2em;
+  padding: 0;
 }
-
 #footer p {
-	margin: 0;
+  margin: 0;
 }
-
 #footer p.powered {
-	margin-top: 1em;
-	margin-right: 2em;
-	float: right;
+  margin-top: 1em;
+  margin-right: 2em;
+  float: right;
 }
-
-
 /* ------------------------------------------------------------
-	10. CLASSES COMMUNES
+  10. CLASSES COMMUNES
 ------------------------------------------------------------- */
 
 /* class sur les liens rss (on peut y placer l'icone
 feed.png a piocher dans le theme par defaut par ex.) */
 
 .feed {
-	padding-left: 24px;
-	background: transparent url(images/feed.png) no-repeat left center;
-	margin-left: -16px;
+  padding-left: 24px;
+  background: transparent url(images/feed.png) no-repeat left center;
+  margin-left: -16px;
 }
-
 /* tags dans le sidebar et dans la page les regroupant
 (exemple ici pour un nuage) */
-.dc-tags #content ul li, .dc-tags #content ul li a,
-.tags ul li, .tags ul li a {
-	display : inline;
-	width : auto;
-	padding-left : 0;
-	padding-right : 4px;
-	background : transparent;
-	line-height : 1.5em;
+
+.dc-tags #content ul li, .dc-tags #content ul li a, .tags ul li, .tags ul li a {
+  display: inline;
+  width: auto;
+  padding-left: 0;
+  padding-right: 4px;
+  background: transparent;
+  line-height: 1.5em;
 }
 .tags ul li a:hover {
-	background-image :none;
+  background-image: none;
 }
-.dc-tags .tag0, .tags .tag0 { font-size: 85%; }
-.dc-tags .tag10, .tags .tag10 { font-size: 90%; }
-.dc-tags .tag20, .tags .tag20 { font-size: 95%; }
-.dc-tags .tag30, .tags .tag30 { font-size: 100%; }
-.dc-tags .tag40, .tags .tag40 { font-size: 105%; }
-.dc-tags .tag50, .tags .tag50 { font-size: 110%; }
-.dc-tags .tag60, .tags .tag60 { font-size: 115%; }
-.dc-tags .tag70, .tags .tag70 { font-size: 120%; }
-.dc-tags .tag80, .tags .tag80 { font-size: 125%; }
-.dc-tags .tag90, .tags .tag90 { font-size: 130%; }
-.dc-tags .tag100, .tags .tag100 { font-size: 135%; }
+.dc-tags .tag0, .tags .tag0 {
+  font-size: 85%;
+}
+.dc-tags .tag10, .tags .tag10 {
+  font-size: 90%;
+}
+.dc-tags .tag20, .tags .tag20 {
+  font-size: 95%;
+}
+.dc-tags .tag30, .tags .tag30 {
+  font-size: 100%;
+}
+.dc-tags .tag40, .tags .tag40 {
+  font-size: 105%;
+}
+.dc-tags .tag50, .tags .tag50 {
+  font-size: 110%;
+}
+.dc-tags .tag60, .tags .tag60 {
+  font-size: 115%;
+}
+.dc-tags .tag70, .tags .tag70 {
+  font-size: 120%;
+}
+.dc-tags .tag80, .tags .tag80 {
+  font-size: 125%;
+}
+.dc-tags .tag90, .tags .tag90 {
+  font-size: 130%;
+}
+.dc-tags .tag100, .tags .tag100 {
+  font-size: 135%;
+}
 .tags p {
-	background: transparent url(images/tags.png) no-repeat left center;
-	padding-left: 22px;
-	line-height: 1.5em;
+  background: transparent url(images/tags.png) no-repeat left center;
+  padding-left: 22px;
+  line-height: 1.5em;
 }
 #sidebar .tags ul {
-	margin-left: 0;
+  margin-left: 0;
 }
-
 /* messages */
 
 .message {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
-
 /* messages d'erreur */
-.error {
-	border: 1px solid #333333;
-	background : #ddff00;
-	padding: 0.5em;
-	}
-.error ul {
-	padding-left : 20px;
-	}
-.error li {
-	list-style : square;
-	}
 
+.error {
+  border: 1px solid #333333;
+  background: #ddff00;
+  padding: 0.5em;
+}
+.error ul {
+  padding-left: 20px;
+}
+.error li {
+  list-style: square;
+}
 /* exemples de ceux que j'ajoute souvent */
 
-.left { float: left; margin-right : 1em; }
-.right { float: right; margin-left : 1em; }
-.center { margin-left : auto; margin-right : auto; }
-.left-text { text-align : left; }
-.right-text { text-align : right; }
-.center-text { text-align : center; }
-.little-text { font-size : .8em;}
-.little-upper-text { font-size : .8em; text-transform : uppercase; }
-
-.author {
-	font-variant: small-caps;
+.left {
+  float: left;
+  margin-right: 1em;
 }
-
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-text {
+  text-align: left;
+}
+.right-text {
+  text-align: right;
+}
+.center-text {
+  text-align: center;
+}
+.little-text {
+  font-size: .8em;
+}
+.little-upper-text {
+  font-size: .8em;
+  text-transform: uppercase;
+}
+.author {
+  font-variant: small-caps;
+}
 /* ------------------------------------------------------------
-	11. PAGES SPECIFIQUES
-	j'indique le marqueur du body, a completer pour cibler
-	plus precisement (cf l'exemple ci-dessus pour les tags)
+  11. PAGES SPECIFIQUES
+  j'indique le marqueur du body, a completer pour cibler
+  plus precisement (cf l'exemple ci-dessus pour les tags)
 ------------------------------------------------------------- */
 
-.dc-home { }
-
-.dc-post { }
+.dc-home {}
+.dc-post {}
 .dc-post .post {
-	padding-top: 32px;
+  padding-top: 32px;
 }
-
-.dc-categories { }
-.dc-category { }
-
-.dc-archive { }
+.dc-categories {}
+.dc-category {}
+.dc-archive {}
 .dc-archive .archive-content-wrapper {
-	position: relative;
-	margin-top: 36px;
+  position: relative;
+  margin-top: 36px;
 }
 .dc-archive .archive-year {
-	position: absolute;
-	text-align: right;
-	width: 275px;
-	margin: 0;
-	padding-right: 20px;
-	border-right: 1px solid #5967c2;
+  position: absolute;
+  text-align: right;
+  width: 275px;
+  margin: 0;
+  padding-right: 20px;
+  border-right: 1px solid #5967c2;
 }
 .dc-archive #content ul {
-	margin-left: 320px;
-	margin-right: 160px;
-	list-style-type: none;
-	padding: 0;
+  margin-left: 320px;
+  margin-right: 160px;
+  list-style-type: none;
+  padding: 0;
 }
-.dc-archive ul li { }
-
-.dc-archive-month { }
+.dc-archive ul li {}
+.dc-archive-month {}
 .dc-archive-month .signature {
-	padding-top: 1em;
-	margin-bottom: 0;
-	line-height: 1em;
+  padding-top: 1em;
+  margin-bottom: 0;
+  line-height: 1em;
 }
 .dc-archive-month .post-info-co {
-	padding-bottom: 2em;
-	margin-top: 0;
-	line-height: 1em;
+  padding-bottom: 2em;
+  margin-top: 0;
+  line-height: 1em;
 }
-
-.dc-tags { }
+.dc-tags {}
 .dc-tags .all-tags {
-	margin-left: 320px;
-	margin-right: 160px;
-	list-style-type: none;
-	padding: 0;
-	font-size: 150%;
+  margin-left: 320px;
+  margin-right: 160px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 150%;
 }
-
-.dc-tag { }
-
-.dc-404 { }
+.dc-tag {}
+.dc-404 {}
 .dc-404 .content-inner {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
 .dc-404 #content-info h2 {
-	text-align: center;
+  text-align: center;
 }
-
-.dc-search { }
-
-
+.dc-search {}
 /* ---------------------------------------------------
   12. ET POUR FINIR NE PAS OUBLIER LES CLEARERS
-	ici ceux le plus souvent necessaires
+  ici ceux le plus souvent necessaires
 --------------------------------------------------- */
-.post, .post-content, .footnotes, .attachments,
-.post-info-co, #comments, #footer {
-    clear:both;
+
+.post, .post-content, .footnotes, .attachments, .post-info-co, #comments, #footer {
+  clear: both;
 }
-
-
 /* ---------------------------------------------------
   13. LE RESTE
 --------------------------------------------------- */
 
 #content img {
-	border: 1px solid #999;
-	padding: 4px;
-	-moz-box-shadow: 0 0 1em #999;
-	-webkit-box-shadow: 0 0 1em #999;
-	box-shadow: 0 0 1em #999;
+  border: 1px solid #999;
+  padding: 4px;
+  -moz-box-shadow: 0 0 1em #999;
+  -webkit-box-shadow: 0 0 1em #999;
+  box-shadow: 0 0 1em #999;
 }
-
 /* Plugin Contact-Me */
 
 .contact-me a {
-	background: transparent url(images/mail.png) no-repeat scroll left bottom;
-	line-height: 1.5em;
-	padding-left: 1.8em;
+  background: transparent url(images/mail.png) no-repeat scroll left bottom;
+  line-height: 1.5em;
+  padding-left: 1.8em;
 }
-
 .dc-contactme .content-inner p {
-	margin-left: 320px;
-	margin-right: 160px;
+  margin-left: 320px;
+  margin-right: 160px;
 }
-
 .dc-contactme .content-inner #comment-form {
-	margin-left: 0;
-	margin-top: 48px;
+  margin-left: 0;
+  margin-top: 48px;
 }
-
 /* Plugin YASH */
+
 #content div.dp-highlighter a {
-	font-weight: normal;
+  font-weight: normal;
 }
-
 #content div.dp-highlighter .keyword {
-	font-weight: normal;
+  font-weight: normal;
 }
-
 /* Divers */
 
 #content span.img-noborder {
-	border: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow: none;
-	box-shadow: none;
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

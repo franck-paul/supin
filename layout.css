@@ -1,120 +1,103 @@
 /*
-# -- BEGIN LICENSE BLOCK ----------------------------------
-#
-# This file is part of Supin, a Dotclear 2 theme.
-#
-# Copyright (c) Franck Paul and contributors
-# http://open-time.net/
-#
-#
-# Licensed under the GPL version 2.0 license.
-# See LICENSE file or
-# http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
-#
-# -- END LICENSE BLOCK ------------------------------------
-
 
  STRUCTURE POUR UNE COLONNE, MENU EN BAS EN DEUX PARTIES, LARGEUR FIXE
 
  --------------------------------------------------------------
-	AVANT TOUTE CHOSE
-	remise à zéro de toutes les marges des grands blocs pour que
-	tous les navigateurs calculent depuis le même point de départ
+  AVANT TOUTE CHOSE
+  remise à zéro de toutes les marges des grands blocs pour que
+  tous les navigateurs calculent depuis le même point de départ
 --------------------------------------------------------------- */
 
-html, body, #page, #top, #prelude, #wrapper, #footer,
-#main, #content,
-#sidebar, #blognav, #blogextra {
-	margin: 0;
-	padding: 0;
+html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar, #blognav, #blogextra {
+  margin: 0;
+  padding: 0;
 }
 /* --------------------------------------------------------------------------
-	STRUCTURE FLUIDE - 1 COLONNE - MENU EN BAS EN PLUSIEURS PARTIES
-	Vous pouvez modifier 100%, 760px et 1280px par les valeur de votre choix.
+  STRUCTURE FLUIDE - 1 COLONNE - MENU EN BAS EN PLUSIEURS PARTIES
+  Vous pouvez modifier 100%, 760px et 1280px par les valeur de votre choix.
 ----------------------------------------------------------------------------- */
+
 #page {
-	width : 100%;
-	min-width: 760px;
-	max-width: 1280px;
-	position: relative;
-    }
+  width: 100%;
+  min-width: 760px;
+  max-width: 1280px;
+  position: relative;
+}
 #top {
-	height : 320px; /* a modifier par la valeur de votre choix */
-	}
+  height: 320px;
+  /* a modifier par la valeur de votre choix */
+}
 #top h1 {
-	text-align: right;
-	margin: 0;
-	padding: 0;
-	margin-left: 320px;
-	line-height: 320px; /* idem que pout #top */
-	height : 320px; /* idem que pour #top */
-	}
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  margin-left: 320px;
+  line-height: 320px;
+  /* idem que pout #top */
+  height: 320px;
+  /* idem que pour #top */
+}
 #top h1 a {
-	display: block;
+  display: block;
 }
 #prelude {
-	display: block;
-	position: absolute;
-	right: 2em;
-	top: 0;
-	text-align: right;
+  display: block;
+  position: absolute;
+  right: 2em;
+  top: 0;
+  text-align: right;
 }
-#wrapper {
-	}
-#main {
-	}
-
+#wrapper {}
+#main {}
 .outer_landscape, .outer_portrait {
-	position: absolute;
-	left: 36px;
-	width:  250px;
-	margin: 0;
-	line-height: 100%;
-	text-align: center;
+  position: absolute;
+  left: 36px;
+  width: 250px;
+  margin: 0;
+  line-height: 100%;
+  text-align: center;
 }
 .outer_landscape {
-	top: 60px;
+  top: 60px;
 }
 .outer_portrait {
-	top: 40px;
+  top: 40px;
 }
-
-#content {
-	}
+#content {}
 #footer {
-	padding-top: 60px;
-	clear: both;
-	margin-left: 320px;
-	}
+  padding-top: 60px;
+  clear: both;
+  margin-left: 320px;
+}
 #alternate {
-	clear: both;
+  clear: both;
 }
 #altmargin {
-	width: 285px;
+  width: 285px;
 }
 #altcontent {
-	margin-left: 320px;
+  margin-left: 320px;
 }
 #sidebar {
-	clear: both;
-	position: relative;
+  clear: both;
+  position: relative;
 }
 #blogmargin {
-	position: absolute;
-	width: 220px;
-	top: 0;
-	left: 48px;
+  position: absolute;
+  width: 220px;
+  top: 0;
+  left: 48px;
 }
 #blognav, #blogextra {
-	margin-left: 320px;
-	clear: both;
-	}
+  margin-left: 320px;
+  clear: both;
+}
 #blognav div, #blogextra div {
-	float: left;
-	width: 200px;
-	padding-right: 10px;
+  float: left;
+  width: 200px;
+  padding-right: 10px;
 }
 #blogextra div.tags {
-	width: 400px;
-	padding-right: 20px;
+  width: 400px;
+  padding-right: 20px;
 }
