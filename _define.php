@@ -16,7 +16,8 @@ $this->registerModule(
     "Supin based on Aorakit 1B by Kozlika", // Description
     "Franck Paul",                          // Author
     '1.3',                                  // Version
-    array(
-        'type' => 'theme' // Type
-    )
+    [
+        'requires' => [['core', '2.13']], // Dependencies
+        'type'     => 'theme'            // Type
+    ]
 );

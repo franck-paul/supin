@@ -13,10 +13,8 @@ namespace themes\supin;
 
 if (!defined('DC_RC_PATH')) {return;}
 
-$core->addBehavior('publicPrepend', array(__NAMESPACE__ . '\behaviorSupinTheme', 'publicPrepend'));
-$core->addBehavior('templateBeforeBlock', array(__NAMESPACE__ . '\behaviorSupinTheme', 'templateBeforeBlock'));
-
-$core->tpl->addValue('Else', array(__NAMESPACE__ . '\templateSupinTheme', 'templateElse'));
+$core->addBehavior('publicPrepend', [__NAMESPACE__ . '\behaviorSupinTheme', 'publicPrepend']);
+$core->addBehavior('templateBeforeBlock', [__NAMESPACE__ . '\behaviorSupinTheme', 'templateBeforeBlock']);
 
 class behaviorSupinTheme
 {
@@ -33,14 +31,6 @@ class behaviorSupinTheme
                 '$params["sql"] .= "AND P.post_url != \'".$_ctx->posts->post_url."\' ";' . "\n" .
                 "?>\n";
         }
-    }
-}
-
-class templateSupinTheme
-{
-    public static function templateElse($attr)
-    {
-        return '<?php else: ?>';
     }
 }
 
