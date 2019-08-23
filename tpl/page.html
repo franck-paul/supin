@@ -16,10 +16,11 @@
 
   {{tpl:include src="_head.html"}}
 
-  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
-  <script type="text/javascript">
-  var post_remember_str = '{{tpl:lang Remember me on this blog}}';
+  <script type="application/json" id="dc_post_remember_str-data">
+    {"post_remember_str": "{{tpl:lang Remember me on this blog}}"}
   </script>
+  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=util.js"></script>
+  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
 </head>
 
 <body class="dc-page">
@@ -68,15 +69,15 @@
       <ul>
     </tpl:AttachmentsHeader>
       <li class="{{tpl:AttachmentType}}">
-        <tpl:AttachmentIf is_mp3="1">
-          {{tpl:include src="_mp3_player.html"}} -
+        <tpl:AttachmentIf is_audio="1">
+          {{tpl:include src="_audio_player.html"}}
         </tpl:AttachmentIf>
-        <tpl:AttachmentIf is_flv="1">
-	     {{tpl:include src="_flv_player.html"}}
-	   </tpl:AttachmentIf>
-	   <tpl:AttachmentIf is_flv="0">
-	   	<a href="{{tpl:AttachmentURL}}"
-		title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
+        <tpl:AttachmentIf is_video="1">
+          {{tpl:include src="_video_player.html"}}
+        </tpl:AttachmentIf>
+        <tpl:AttachmentIf is_audio="0" is_video="0">
+           <a href="{{tpl:AttachmentURL}}"
+    title="{{tpl:AttachmentFileName}} ({{tpl:AttachmentSize}})">{{tpl:AttachmentTitle}}</a>
         </tpl:AttachmentIf>
       </li>
     <tpl:AttachmentsFooter>
