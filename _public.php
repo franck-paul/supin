@@ -8,10 +8,11 @@
  * @copyright Franck Paul (carnet.franck.paul@gmail.com)
  * @copyright GPL-2.0
  */
-
 namespace themes\supin;
 
-if (!defined('DC_RC_PATH')) {return;}
+if (!defined('DC_RC_PATH')) {
+    return;
+}
 
 $core->addBehavior('publicPrepend', [__NAMESPACE__ . '\behaviorSupinTheme', 'publicPrepend']);
 $core->addBehavior('templateBeforeBlock', [__NAMESPACE__ . '\behaviorSupinTheme', 'templateBeforeBlock']);

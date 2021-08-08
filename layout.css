@@ -8,10 +8,22 @@
   tous les navigateurs calculent depuis le même point de départ
 --------------------------------------------------------------- */
 
-html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar, #blognav, #blogextra {
+html,
+body,
+#page,
+#top,
+#prelude,
+#wrapper,
+#footer,
+#main,
+#content,
+#sidebar,
+#blognav,
+#blogextra {
   margin: 0;
   padding: 0;
 }
+
 /* --------------------------------------------------------------------------
   STRUCTURE FLUIDE - 1 COLONNE - MENU EN BAS EN PLUSIEURS PARTIES
   Vous pouvez modifier 100%, 760px et 1280px par les valeur de votre choix.
@@ -23,10 +35,12 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
   max-width: 1280px;
   position: relative;
 }
+
 #top {
   height: 320px;
   /* a modifier par la valeur de votre choix */
 }
+
 #top h1 {
   text-align: right;
   margin: 0;
@@ -37,9 +51,11 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
   height: 320px;
   /* idem que pour #top */
 }
+
 #top h1 a {
   display: block;
 }
+
 #prelude {
   display: block;
   position: absolute;
@@ -47,9 +63,13 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
   top: 0;
   text-align: right;
 }
+
 #wrapper {}
+
 #main {}
-.outer_landscape, .outer_portrait {
+
+.outer_landscape,
+.outer_portrait {
   position: absolute;
   left: 36px;
   width: 250px;
@@ -57,46 +77,60 @@ html, body, #page, #top, #prelude, #wrapper, #footer, #main, #content, #sidebar,
   line-height: 100%;
   text-align: center;
 }
+
 .outer_landscape {
   top: 60px;
 }
+
 .outer_portrait {
   top: 40px;
 }
+
 #content {}
+
 #footer {
   padding-top: 60px;
   clear: both;
   margin-left: 320px;
 }
+
 #alternate {
   clear: both;
 }
+
 #altmargin {
   width: 285px;
 }
+
 #altcontent {
   margin-left: 320px;
 }
+
 #sidebar {
   clear: both;
   position: relative;
 }
+
 #blogmargin {
   position: absolute;
   width: 220px;
   top: 0;
   left: 48px;
 }
-#blognav, #blogextra {
+
+#blognav,
+#blogextra {
   margin-left: 320px;
   clear: both;
 }
-#blognav div, #blogextra div {
+
+#blognav div,
+#blogextra div {
   float: left;
   width: 200px;
   padding-right: 10px;
 }
+
 #blogextra div.tags {
   width: 400px;
   padding-right: 20px;
