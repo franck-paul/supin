@@ -1,0 +1,12 @@
+<modules xmlns:da="http://dotaddict.org/da/">
+  <module id="supin">
+    <name>Supin</name>
+    <version>1.3</version>
+    <author>Franck Paul</author>
+    <desc>Supin based on Aorakit 1B by Kozlika</desc>
+    <file>https://github.com/franck-paul/supin/releases/download/1.3/theme-supin.zip</file>
+    <da:dcmin>2.19</da:dcmin>
+    <da:details>https://open-time.net/?q=supin</da:details>
+    <da:support>https://github.com/franck-paul/supin</da:support>
+  </module>
+</modules>
