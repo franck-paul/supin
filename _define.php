@@ -19,6 +19,10 @@ $this->registerModule(
     '1.3',                                  // Version
     [
         'requires' => [['core', '2.19']], // Dependencies
-        'type'     => 'theme'             // Type
+        'type'     => 'theme',            // Type
+
+        'details'    => 'https://open-time.net/?q=supin',       // Details URL
+        'support'    => 'https://github.com/franck-paul/supin', // Support URL
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/supin/main/dcstore.xml'
     ]
 );
