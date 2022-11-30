@@ -13,16 +13,16 @@ if (!defined('DC_RC_PATH')) {
 }
 
 $this->registerModule(
-    'Supin',                                // Name
-    'Supin based on Aorakit 1B by Kozlika', // Description
-    'Franck Paul',                          // Author
-    '1.3',                                  // Version
+    'Supin',
+    'Supin based on Aorakit 1B by Kozlika',
+    'Franck Paul',
+    '2.0',
     [
-        'requires' => [['core', '2.19']], // Dependencies
-        'type'     => 'theme',            // Type
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
 
-        'details'    => 'https://open-time.net/?q=supin',       // Details URL
-        'support'    => 'https://github.com/franck-paul/supin', // Support URL
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/supin/master/dcstore.xml'
+        'details'    => 'https://open-time.net/?q=supin',
+        'support'    => 'https://github.com/franck-paul/supin',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/supin/master/dcstore.xml',
     ]
 );
