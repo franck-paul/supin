@@ -1,19 +1,18 @@
 <?php
 /**
- * @brief supin, a theme for Dotclear 2
+ * @brief supin, a plugin for Dotclear 2
  *
  * @package Dotclear
- * @subpackage Themes
+ * @subpackage Plugins
  *
- * @copyright Franck Paul (carnet.franck.paul@gmail.com)
- * @copyright GPL-2.0
+ * @author Franck Paul and contributors
+ *
+ * @copyright Franck Paul carnet.franck.paul@gmail.com
+ * @copyright GPL-2.0 https://www.gnu.org/licenses/gpl-2.0.html
  */
+declare(strict_types=1);
 
-namespace Dotclear\Theme\Supin;
-
-use dcCore;
-
-dcCore::app()->addBehavior('templateBeforeBlockV2', [__NAMESPACE__ . '\behaviorSupinTheme', 'templateBeforeBlock']);
+namespace Dotclear\Plugin\supin;
 
 class behaviorSupinTheme
 {
