@@ -8,17 +8,13 @@
  * @copyright Franck Paul (carnet.franck.paul@gmail.com)
  * @copyright GPL-2.0
  */
-if (!defined('DC_RC_PATH')) {
-    return;
-}
-
 $this->registerModule(
     'Supin',
     'Supin based on Aorakit 1B by Kozlika',
     'Franck Paul',
-    '2.0',
+    '3.0',
     [
-        'requires' => [['core', '2.24']],
+        'requires' => [['core', '2.26']],
         'type'     => 'theme',
 
         'details'    => 'https://open-time.net/?q=supin',
