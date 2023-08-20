@@ -12,9 +12,9 @@
  */
 declare(strict_types=1);
 
-namespace Dotclear\Plugin\supin;
+namespace Dotclear\Theme\supin;
 
-class behaviorSupinTheme
+class FrontendBehaviors
 {
     public static function templateBeforeBlock($b, $attr)
     {
