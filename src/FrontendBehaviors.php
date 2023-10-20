@@ -21,7 +21,7 @@ class FrontendBehaviors
         if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
             return
                 "<?php\n" .
-                '$params["sql"] .= "AND P.post_url != \'".dcCore::app()->ctx->posts->post_url."\' ";' . "\n" .
+                '$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
                 "?>\n";
         }
     }
