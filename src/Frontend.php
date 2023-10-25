@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\supin;
 
+use Dotclear\App;
 use Dotclear\Core\Process;
 
 class Frontend extends Process
