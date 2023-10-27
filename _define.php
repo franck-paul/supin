@@ -12,7 +12,7 @@ $this->registerModule(
     'Supin',
     'Supin based on Aorakit 1B by Kozlika',
     'Franck Paul',
-    '5.0',
+    '5.1',
     [
         'requires' => [['core', '2.28']],
         'type'     => 'theme',
