@@ -19,6 +19,6 @@ $this->registerModule(
 
         'details'    => 'https://open-time.net/?q=supin',
         'support'    => 'https://github.com/franck-paul/supin',
-        'repository' => 'https://raw.githubusercontent.com/franck-paul/supin/master/dcstore.xml',
+        'repository' => 'https://raw.githubusercontent.com/franck-paul/supin/main/dcstore.xml',
     ]
 );
