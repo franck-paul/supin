@@ -64,9 +64,11 @@ body,
   text-align: right;
 }
 
-#wrapper {}
+#wrapper {
+}
 
-#main {}
+#main {
+}
 
 .outer_landscape,
 .outer_portrait {
@@ -86,7 +88,8 @@ body,
   top: 40px;
 }
 
-#content {}
+#content {
+}
 
 #footer {
   padding-top: 60px;

@@ -20,20 +20,22 @@ Prélude, fond code et boutons : #ebedfa (bleu ciel)
 ------------------------------------------------------------- */
 
 html {
-  font-size: 100.01%
+  font-size: 100.01%;
 }
 
 body {
-  font-family: "Candara", "Lucida grande", Lucida, Verdana, sans-serif;
+  font-family: 'Candara', 'Lucida grande', Lucida, Verdana, sans-serif;
   font-size: 92%;
   line-height: 140%;
   color: #000;
   background-color: #fff;
 }
 
-h1 {}
+h1 {
+}
 
-h2 {}
+h2 {
+}
 
 h3 {
   clear: both;
@@ -55,15 +57,20 @@ p {
   margin: 1em 0;
 }
 
-img {}
+img {
+  max-width: 100%;
+}
 
-sup {}
+sup {
+}
 
 abbr,
-acronym {}
+acronym {
+}
 
 blockquote,
-q {}
+q {
+}
 
 blockquote {
   background: transparent url(images/quote.gif) no-repeat scroll left top;
@@ -76,20 +83,25 @@ blockquote em {
   font-style: normal;
 }
 
-cite {}
-
-[lang="fr"] q,
-q[lang="fr"] {
-  quotes: "« "" »";
+cite {
 }
 
-ul {}
+[lang='fr'] q,
+q[lang='fr'] {
+  quotes: '« ' ' »';
+}
 
-ol {}
+ul {
+}
 
-dl {}
+ol {
+}
 
-form {}
+dl {
+}
+
+form {
+}
 
 fieldset {
   border: none;
@@ -114,7 +126,8 @@ input:hover {
   border-color: #000;
 }
 
-label {}
+label {
+}
 
 textarea {
   width: 95%;
@@ -126,33 +139,37 @@ a {
   outline: none;
 }
 
-a:link {}
+a:link {
+}
 
-a:visited {}
+a:visited {
+}
 
 a:hover {
   color: #b54267;
 }
 
-a:focus {}
-
-a[hreflang]:after {
-  content: "\0000a0["attr(hreflang) "]";
+a:focus {
 }
 
-a[hreflang|="fr"]:after {
-  content: "";
+a[hreflang]:after {
+  content: '\0000a0[' attr(hreflang) ']';
+}
+
+a[hreflang|='fr']:after {
+  content: '';
 }
 
 a[hreflang] {
   content: normal !important;
 }
 
-a img {}
+a img {
+}
 
 code,
 pre {
-  font-family: "liberation mono", "Andale Mono", "DejaVu Sans Mono", "Courier New", Courier, monospace;
+  font-family: 'liberation mono', 'Andale Mono', 'DejaVu Sans Mono', 'Courier New', Courier, monospace;
   font-size: 1em;
   font-size-adjust: 0.5;
 }
@@ -201,7 +218,8 @@ sup {
   3. PAGE
 ------------------------------------------------------------- */
 
-#page {}
+#page {
+}
 
 /* ------------------------------------------------------------
   4. HAUT DE PAGE
@@ -213,7 +231,8 @@ sup {
   margin-right: 40px;
 }
 
-#top h1 {}
+#top h1 {
+}
 
 #top h1 a {
   color: #fff;
@@ -260,13 +279,15 @@ sup {
   5. WRAPPER MAIN CONTENT
 ------------------------------------------------------------- */
 
-#wrapper {}
+#wrapper {
+}
 
 #main {
   text-align: justify;
 }
 
-#content {}
+#content {
+}
 
 #content-info {
   margin-left: 320px;
@@ -277,7 +298,8 @@ sup {
   color: #666;
 }
 
-#content-info p {}
+#content-info p {
+}
 
 #content-info .feed {
   margin-left: 0;
@@ -303,7 +325,8 @@ sup {
   -webkit-border-radius: 10px;
 }
 
-.content-inner {}
+.content-inner {
+}
 
 .pagination {
   margin-left: 320px;
@@ -329,7 +352,8 @@ sup {
   padding-top: 32px;
 }
 
-.post.odd {}
+.post.odd {
+}
 
 .post-title,
 .post-info,
@@ -376,7 +400,8 @@ sup {
   color: #5967c2;
 }
 
-.post-month {}
+.post-month {
+}
 
 .post-year {
   font-size: 1.25em;
@@ -387,9 +412,11 @@ sup {
   line-height: 1em;
 }
 
-.post-info {}
+.post-info {
+}
 
-.post-tags {}
+.post-tags {
+}
 
 .signature {
   padding-top: 3em;
@@ -409,15 +436,20 @@ ul.post-tags li {
   background: transparent url('images/tag.png') no-repeat left top;
 }
 
-.post-excerpt {}
+.post-excerpt {
+}
 
-.post-content {}
+.post-content {
+}
 
-.read-it {}
+.read-it {
+}
 
-.footnotes {}
+.footnotes {
+}
 
-.footnotes h4 {}
+.footnotes h4 {
+}
 
 .post-info-co {
   text-align: right;
@@ -447,17 +479,23 @@ ul.post-tags li {
   margin-right: 160px;
 }
 
-#attachments h3 {}
+#attachments h3 {
+}
 
-#attachments ul {}
+#attachments ul {
+}
 
-#attachments ul li {}
+#attachments ul li {
+}
 
-#attachments li.audio {}
+#attachments li.audio {
+}
 
-#attachments li.package {}
+#attachments li.package {
+}
 
-#attachments li.text {}
+#attachments li.text {
+}
 
 /* ------------------------------------------------------------
   7. COMMENTAIRES, PINGS
@@ -473,21 +511,29 @@ ul.post-tags li {
   margin-right: 160px;
 }
 
-#comments {}
+#comments {
+}
 
-#pings {}
+#pings {
+}
 
-#pr {}
+#pr {
+}
 
-#comment-form {}
+#comment-form {
+}
 
-#comments h3 {}
+#comments h3 {
+}
 
-#pings h3 {}
+#pings h3 {
+}
 
-#pr h3 {}
+#pr h3 {
+}
 
-#comment-form h3 {}
+#comment-form h3 {
+}
 
 #comments dt,
 #pings dt {
@@ -504,39 +550,56 @@ ul.post-tags li {
 }
 
 .comment-number,
-.ping-number {}
+.ping-number {
+}
 
-#comments dl {}
+#comments dl {
+}
 
-#comments dt {}
+#comments dt {
+}
 
-#comments dd {}
+#comments dd {
+}
 
-#comments .first {}
+#comments .first {
+}
 
-#comments .odd {}
+#comments .odd {
+}
 
-#comments .me {}
+#comments .me {
+}
 
-#pings dl {}
+#pings dl {
+}
 
-#pings dt {}
+#pings dt {
+}
 
-#pings dd {}
+#pings dd {
+}
 
-#pings .first {}
+#pings .first {
+}
 
-#pings .odd {}
+#pings .odd {
+}
 
-#pings .me {}
+#pings .me {
+}
 
-#pr dl {}
+#pr dl {
+}
 
-#pr dd {}
+#pr dd {
+}
 
-#comment-form fieldset {}
+#comment-form fieldset {
+}
 
-.field {}
+.field {
+}
 
 .field label {
   clear: left;
@@ -545,17 +608,23 @@ ul.post-tags li {
   width: 13em;
 }
 
-.field input {}
+.field input {
+}
 
-.field textarea {}
+.field textarea {
+}
 
-#comment-form input[type=submit] {}
+#comment-form input[type='submit'] {
+}
 
-#comment-form input[type=reset] {}
+#comment-form input[type='reset'] {
+}
 
-.form-help {}
+.form-help {
+}
 
-#ping-url {}
+#ping-url {
+}
 
 #comments-feed {
   margin-top: 24px;
@@ -571,9 +640,11 @@ ul.post-tags li {
   margin-top: 48px;
 }
 
-#altmargin {}
+#altmargin {
+}
 
-#altcontent {}
+#altcontent {
+}
 
 #sidebar {
   margin-top: 48px;
@@ -596,7 +667,8 @@ ul.post-tags li {
   font-size: 1.1em;
 }
 
-#sidebar h3 {}
+#sidebar h3 {
+}
 
 #sidebar ul {
   margin: 0 0 0 1.2em;
@@ -612,49 +684,66 @@ ul.post-tags li {
 
 /* boites du menu des widgets livres avec Dotclear */
 
-#search {}
+#search {
+}
 
-#search form {}
+#search form {
+}
 
-#search input[type=text] {
+#search input[type='text'] {
   background: #fff url(images/magnifier.png) no-repeat scroll 0.5em center;
   border: 1px solid #333;
   padding: 0.25em 0.25em 0.25em 2.5em;
 }
 
-#search input[type=submit] {}
+#search input[type='submit'] {
+}
 
-#topnav {}
+#topnav {
+}
 
-.topnav-arch {}
+.topnav-arch {
+}
 
-.topnav-home {}
+.topnav-home {
+}
 
-.selected {}
+.selected {
+}
 
-.langs {}
+.langs {
+}
 
-.categories {}
+.categories {
+}
 
-.syndicate {}
+.syndicate {
+}
 
 .syndicate ul {
   list-style-type: none;
 }
 
-.lastposts {}
+.lastposts {
+}
 
-.lastcomments {}
+.lastcomments {
+}
 
-.text {}
+.text {
+}
 
-.links {}
+.links {
+}
 
-.tags {}
+.tags {
+}
 
-.tags ul {}
+.tags ul {
+}
 
-.tags li {}
+.tags li {
+}
 
 /* a completer separement ou globalement pour le sidebar et la page
 specifique des tags avec les differentes class des tags en fonction
@@ -664,7 +753,8 @@ de leur frequence - voir 9/ classes communes */
   9. FOOTER
 ------------------------------------------------------------- */
 
-#footer {}
+#footer {
+}
 
 #footer div {
   float: left;
@@ -837,11 +927,11 @@ feed.png a piocher dans le theme par defaut par ex.) */
 }
 
 .little-text {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .little-upper-text {
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
 }
 
@@ -855,19 +945,24 @@ feed.png a piocher dans le theme par defaut par ex.) */
   plus precisement (cf l'exemple ci-dessus pour les tags)
 ------------------------------------------------------------- */
 
-.dc-home {}
+.dc-home {
+}
 
-.dc-post {}
+.dc-post {
+}
 
 .dc-post .post {
   padding-top: 32px;
 }
 
-.dc-categories {}
+.dc-categories {
+}
 
-.dc-category {}
+.dc-category {
+}
 
-.dc-archive {}
+.dc-archive {
+}
 
 .dc-archive .archive-content-wrapper {
   position: relative;
@@ -890,9 +985,11 @@ feed.png a piocher dans le theme par defaut par ex.) */
   padding: 0;
 }
 
-.dc-archive ul li {}
+.dc-archive ul li {
+}
 
-.dc-archive-month {}
+.dc-archive-month {
+}
 
 .dc-archive-month .signature {
   padding-top: 1em;
@@ -906,7 +1003,8 @@ feed.png a piocher dans le theme par defaut par ex.) */
   line-height: 1em;
 }
 
-.dc-tags {}
+.dc-tags {
+}
 
 .dc-tags .all-tags {
   margin-left: 320px;
@@ -916,9 +1014,11 @@ feed.png a piocher dans le theme par defaut par ex.) */
   font-size: 150%;
 }
 
-.dc-tag {}
+.dc-tag {
+}
 
-.dc-404 {}
+.dc-404 {
+}
 
 .dc-404 .content-inner {
   margin-left: 320px;
@@ -929,7 +1029,8 @@ feed.png a piocher dans le theme par defaut par ex.) */
   text-align: center;
 }
 
-.dc-search {}
+.dc-search {
+}
 
 /* ---------------------------------------------------
   12. ET POUR FINIR NE PAS OUBLIER LES CLEARERS
