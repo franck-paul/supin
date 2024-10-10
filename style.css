@@ -226,7 +226,6 @@ sup {
 ------------------------------------------------------------- */
 
 #top {
-  background: transparent url('images/title.png') no-repeat right 50%;
   text-align: right;
   margin-right: 40px;
 }
@@ -235,8 +234,7 @@ sup {
 }
 
 #top h1 a {
-  color: #fff;
-  text-align: left;
+  font-size: 1.75em;
 }
 
 #prelude {
