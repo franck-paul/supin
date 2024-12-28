@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @brief supin, a plugin for Dotclear 2
  *
@@ -16,13 +17,15 @@ namespace Dotclear\Theme\supin;
 
 class FrontendBehaviors
 {
-    public static function templateBeforeBlock($b, $attr)
+    public static function templateBeforeBlock(string $b, array $attr): string
     {
-        if ($b == 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
+        if ($b === 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
             return
                 "<?php\n" .
                 '$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
                 "?>\n";
         }
+
+        return '';
     }
 }

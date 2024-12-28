@@ -210,8 +210,20 @@ hr {
   margin: 2em 10em;
 }
 
+sup,
+sub {
+  font-size: calc(0.5em + 4px);
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
 sup {
-  line-height: 0.6em;
+  top: calc(-0.83 * (1em - 4px));
+}
+
+sub {
+  top: calc(0.415 * (1em - 4px));
 }
 
 /* ------------------------------------------------------------
