@@ -15,9 +15,11 @@ declare(strict_types=1);
 
 namespace Dotclear\Theme\supin;
 
+use ArrayObject;
+
 class FrontendBehaviors
 {
-    public static function templateBeforeBlock(string $b, array $attr): string
+    public static function templateBeforeBlock(string $b, array|ArrayObject $attr): string
     {
         if ($b === 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
             return
