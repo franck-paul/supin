@@ -13,9 +13,9 @@ $this->registerModule(
     'Supin',
     'Supin based on Aorakit 1B by Kozlika',
     'Franck Paul',
-    '5.5',
+    '6.0',
     [
-        'date'     => '2025-05-15T18:47:12+0200',
+        'date'     => '2025-06-27T13:23:55+0200',
         'requires' => [['core', '2.35']],
         'type'     => 'theme',
         'overload' => true,
