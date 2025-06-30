@@ -31,12 +31,6 @@ body {
   background-color: #fff;
 }
 
-h1 {
-}
-
-h2 {
-}
-
 h3 {
   clear: both;
 }
@@ -61,17 +55,6 @@ img {
   max-width: 100%;
 }
 
-sup {
-}
-
-abbr,
-acronym {
-}
-
-blockquote,
-q {
-}
-
 blockquote {
   background: transparent url(index.php?tf=images/quote.gif) no-repeat scroll left top;
   margin: 1em;
@@ -83,24 +66,9 @@ blockquote em {
   font-style: normal;
 }
 
-cite {
-}
-
 [lang='fr'] q,
 q[lang='fr'] {
   quotes: '« ' ' »';
-}
-
-ul {
-}
-
-ol {
-}
-
-dl {
-}
-
-form {
 }
 
 fieldset {
@@ -119,14 +87,10 @@ input {
   border-width: 1px;
   border-style: solid;
   padding: 0.25em 0.6em;
-  background: #ebedfa;
 }
 
 input:hover {
   border-color: #000;
-}
-
-label {
 }
 
 textarea {
@@ -139,17 +103,8 @@ a {
   outline: none;
 }
 
-a:link {
-}
-
-a:visited {
-}
-
 a:hover {
   color: #b54267;
-}
-
-a:focus {
 }
 
 a[hreflang]:after {
@@ -162,9 +117,6 @@ a[hreflang|='fr']:after {
 
 a[hreflang] {
   content: normal !important;
-}
-
-a img {
 }
 
 code,
@@ -230,9 +182,6 @@ sub {
   3. PAGE
 ------------------------------------------------------------- */
 
-#page {
-}
-
 /* ------------------------------------------------------------
   4. HAUT DE PAGE
 ------------------------------------------------------------- */
@@ -240,9 +189,6 @@ sub {
 #top {
   text-align: right;
   margin-right: 40px;
-}
-
-#top h1 {
 }
 
 #top h1 a {
@@ -289,14 +235,8 @@ sub {
   5. WRAPPER MAIN CONTENT
 ------------------------------------------------------------- */
 
-#wrapper {
-}
-
 #main {
   text-align: justify;
-}
-
-#content {
 }
 
 #content-info {
@@ -306,9 +246,6 @@ sub {
 
 #content-info h2 {
   color: #666;
-}
-
-#content-info p {
 }
 
 #content-info .feed {
@@ -335,9 +272,6 @@ sub {
   -webkit-border-radius: 10px;
 }
 
-.content-inner {
-}
-
 .pagination {
   margin-left: 320px;
   margin-right: 160px;
@@ -360,9 +294,6 @@ sub {
 
 .post.first {
   padding-top: 32px;
-}
-
-.post.odd {
 }
 
 .post-title,
@@ -410,9 +341,6 @@ sub {
   color: #5967c2;
 }
 
-.post-month {
-}
-
 .post-year {
   font-size: 1.25em;
 }
@@ -420,12 +348,6 @@ sub {
 .post-title {
   font-size: 2.4em;
   line-height: 1em;
-}
-
-.post-info {
-}
-
-.post-tags {
 }
 
 .signature {
@@ -444,21 +366,6 @@ ul.post-tags li {
   margin: 0 1.2em 0 0;
   padding: 0 0 2px 22px;
   background: transparent url(index.php?tf=images/tag.png) no-repeat left top;
-}
-
-.post-excerpt {
-}
-
-.post-content {
-}
-
-.read-it {
-}
-
-.footnotes {
-}
-
-.footnotes h4 {
 }
 
 .post-info-co {
@@ -489,24 +396,6 @@ ul.post-tags li {
   margin-right: 160px;
 }
 
-#attachments h3 {
-}
-
-#attachments ul {
-}
-
-#attachments ul li {
-}
-
-#attachments li.audio {
-}
-
-#attachments li.package {
-}
-
-#attachments li.text {
-}
-
 /* ------------------------------------------------------------
   7. COMMENTAIRES, PINGS
 ------------------------------------------------------------- */
@@ -519,30 +408,6 @@ ul.post-tags li {
   margin-top: 48px;
   margin-left: 320px;
   margin-right: 160px;
-}
-
-#comments {
-}
-
-#pings {
-}
-
-#pr {
-}
-
-#comment-form {
-}
-
-#comments h3 {
-}
-
-#pings h3 {
-}
-
-#pr h3 {
-}
-
-#comment-form h3 {
 }
 
 #comments dt,
@@ -559,81 +424,11 @@ ul.post-tags li {
   -webkit-border-radius: 10px;
 }
 
-.comment-number,
-.ping-number {
-}
-
-#comments dl {
-}
-
-#comments dt {
-}
-
-#comments dd {
-}
-
-#comments .first {
-}
-
-#comments .odd {
-}
-
-#comments .me {
-}
-
-#pings dl {
-}
-
-#pings dt {
-}
-
-#pings dd {
-}
-
-#pings .first {
-}
-
-#pings .odd {
-}
-
-#pings .me {
-}
-
-#pr dl {
-}
-
-#pr dd {
-}
-
-#comment-form fieldset {
-}
-
-.field {
-}
-
 .field label {
   clear: left;
   display: block;
   float: left;
   width: 13em;
-}
-
-.field input {
-}
-
-.field textarea {
-}
-
-#comment-form input[type='submit'] {
-}
-
-#comment-form input[type='reset'] {
-}
-
-.form-help {
-}
-
-#ping-url {
 }
 
 #comments-feed {
@@ -648,12 +443,6 @@ ul.post-tags li {
 
 #alternate {
   margin-top: 48px;
-}
-
-#altmargin {
-}
-
-#altcontent {
 }
 
 #sidebar {
@@ -677,9 +466,6 @@ ul.post-tags li {
   font-size: 1.1em;
 }
 
-#sidebar h3 {
-}
-
 #sidebar ul {
   margin: 0 0 0 1.2em;
   padding: 0;
@@ -694,65 +480,18 @@ ul.post-tags li {
 
 /* boites du menu des widgets livres avec Dotclear */
 
-#search {
-}
-
-#search form {
-}
-
-#search input[type='text'] {
-  background: #fff url(index.php?tf=images/magnifier.png) no-repeat scroll 0.5em center;
+#search input[type='search'] {
+  background-image: url(index.php?tf=images/magnifier.png);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x: 0.5em;
+  background-position-y: center;
   border: 1px solid #333;
   padding: 0.25em 0.25em 0.25em 2.5em;
 }
 
-#search input[type='submit'] {
-}
-
-#topnav {
-}
-
-.topnav-arch {
-}
-
-.topnav-home {
-}
-
-.selected {
-}
-
-.langs {
-}
-
-.categories {
-}
-
-.syndicate {
-}
-
 .syndicate ul {
   list-style-type: none;
-}
-
-.lastposts {
-}
-
-.lastcomments {
-}
-
-.text {
-}
-
-.links {
-}
-
-.tags {
-}
-
-.tags ul {
-}
-
-.tags li {
 }
 
 /* a completer separement ou globalement pour le sidebar et la page
@@ -762,9 +501,6 @@ de leur frequence - voir 9/ classes communes */
 /* ------------------------------------------------------------
   9. FOOTER
 ------------------------------------------------------------- */
-
-#footer {
-}
 
 #footer div {
   float: left;
@@ -955,23 +691,8 @@ feed.png a piocher dans le theme par defaut par ex.) */
   plus precisement (cf l'exemple ci-dessus pour les tags)
 ------------------------------------------------------------- */
 
-.dc-home {
-}
-
-.dc-post {
-}
-
 .dc-post .post {
   padding-top: 32px;
-}
-
-.dc-categories {
-}
-
-.dc-category {
-}
-
-.dc-archive {
 }
 
 .dc-archive .archive-content-wrapper {
@@ -995,12 +716,6 @@ feed.png a piocher dans le theme par defaut par ex.) */
   padding: 0;
 }
 
-.dc-archive ul li {
-}
-
-.dc-archive-month {
-}
-
 .dc-archive-month .signature {
   padding-top: 1em;
   margin-bottom: 0;
@@ -1013,21 +728,12 @@ feed.png a piocher dans le theme par defaut par ex.) */
   line-height: 1em;
 }
 
-.dc-tags {
-}
-
 .dc-tags .all-tags {
   margin-left: 320px;
   margin-right: 160px;
   list-style-type: none;
   padding: 0;
   font-size: 150%;
-}
-
-.dc-tag {
-}
-
-.dc-404 {
 }
 
 .dc-404 .content-inner {
@@ -1037,9 +743,6 @@ feed.png a piocher dans le theme par defaut par ex.) */
 
 .dc-404 #content-info h2 {
   text-align: center;
-}
-
-.dc-search {
 }
 
 /* ---------------------------------------------------
