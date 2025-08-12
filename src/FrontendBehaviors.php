@@ -19,7 +19,10 @@ use ArrayObject;
 
 class FrontendBehaviors
 {
-    public static function templateBeforeBlock(string $b, array|ArrayObject $attr): string
+    /**
+     * @param  ArrayObject<array-key, mixed>    $attr
+     */
+    public static function templateBeforeBlock(string $b, ArrayObject $attr): string
     {
         if ($b === 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
             return
