@@ -1,11 +1,11 @@
 <modules xmlns:da="http://dotaddict.org/da/">
   <module id="supin">
     <name>Supin</name>
-    <version>7.0</version>
+    <version>7.1</version>
     <author>Franck Paul</author>
     <desc>Supin based on Aorakit 1B by Kozlika</desc>
-    <date>2025-09-07T14:21:18+0200</date>
-    <file>https://github.com/franck-paul/supin/releases/download/7.0/theme-supin-7.0.zip</file>
+    <date>2026-04-05T11:53:08+0200</date>
+    <file>https://github.com/franck-paul/supin/releases/download/7.1/theme-supin-7.1.zip</file>
     <da:dcmin>2.36</da:dcmin>
     <da:details>https://dotclear.org/theme/detail/supin</da:details>
     <da:support>https://github.com/franck-paul/supin</da:support>
