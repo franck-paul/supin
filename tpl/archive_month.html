@@ -49,7 +49,7 @@
 			<h2 id="p{{tpl:EntryID}}" class="post-title" lang="{{tpl:EntryLang}}" xml:lang="{{tpl:EntryLang}}">{{tpl:EntryDate format="%e"}}&nbsp;: <a
 			href="{{tpl:EntryURL}}" title="{{tpl:lang Read}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryTitle encode_html="1"}}</a></h2>
 
-			<p class="post-content">{{tpl:EntryFirstImage size="t" class="left"}}{{tpl:EntryContent full="1" remove_html="1" cut_string="200"}}&nbsp;[&hellip;]</p>
+			<p class="post-content">{{tpl:EntryFirstImage size="t" class="left"}}{{tpl:EntryContent full="1" strip_tags="1" cut_string="200"}}&nbsp;[&hellip;]</p>
 
 			<p class="post-info signature">{{tpl:lang By}} {{tpl:EntryAuthorLink}}
 			<tpl:EntryIf has_category="1">
