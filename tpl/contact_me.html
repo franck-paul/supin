@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{tpl:BlogLanguage}}">
+<html lang="{{tpl:BlogLanguage}}" dir="{{tpl:BlogLanguageDirection}}">
 <head>
   <meta charset="UTF-8">
   <meta name="ROBOTS" content="{{tpl:BlogMetaRobots}}">
@@ -25,73 +25,73 @@
 <div id="main">
   <div id="content">
 
-		<div id="content-info">
-	  	<h2>{{tpl:ContactMePageTitle encode_html="1"}}</h2>
-		</div>
+    <div id="content-info">
+      <h2>{{tpl:ContactMePageTitle encode_html="1"}}</h2>
+    </div>
 
-	  <div class="content-inner">
-	  <tpl:ContactMeIf sent="1">{{tpl:ContactMeMsgSuccess}}</tpl:ContactMeIf>
+    <div class="content-inner">
+    <tpl:ContactMeIf sent="1">{{tpl:ContactMeMsgSuccess}}</tpl:ContactMeIf>
 
-	  <tpl:ContactMeIf error="1">{{tpl:ContactMeMsgError}}</tpl:ContactMeIf>
+    <tpl:ContactMeIf error="1">{{tpl:ContactMeMsgError}}</tpl:ContactMeIf>
 
-	  <tpl:ContactMeIf sent="0">
-	    {{tpl:ContactMeFormCaption}}
-	    <form action="{{tpl:ContactMeURL}}" method="post" id="comment-form" class="contactme">
-	      <fieldset>
-	        <p class="field"><label for="c_name">{{tpl:lang Name or nickname}}&nbsp;:</label>
-	        <input name="c_name" id="c_name" type="text" size="30" maxlength="255"
-	        value="{{tpl:ContactMeName encode_html="1"}}">
-	        </p>
+    <tpl:ContactMeIf sent="0">
+      {{tpl:ContactMeFormCaption}}
+      <form action="{{tpl:ContactMeURL}}" method="post" id="comment-form" class="contactme">
+        <fieldset>
+          <p class="field"><label for="c_name">{{tpl:lang Name or nickname}}&nbsp;:</label>
+          <input name="c_name" id="c_name" type="text" size="30" maxlength="255"
+          value="{{tpl:ContactMeName encode_html="1"}}">
+          </p>
 
-	        <p class="field"><label for="c_mail">{{tpl:lang Email address}}&nbsp;:</label>
-	        <input name="c_mail" id="c_mail" type="text" size="30" maxlength="255"
-	        value="{{tpl:ContactMeEmail encode_html="1"}}">
-	        </p>
+          <p class="field"><label for="c_mail">{{tpl:lang Email address}}&nbsp;:</label>
+          <input name="c_mail" id="c_mail" type="text" size="30" maxlength="255"
+          value="{{tpl:ContactMeEmail encode_html="1"}}">
+          </p>
 
-	        <p class="field"><label for="c_site">{{tpl:lang Website}}
-	        ({{tpl:lang optional}})&nbsp;:</label>
-	        <input name="c_site" id="c_site" type="text" size="30" maxlength="255"
-	        value="{{tpl:ContactMeSite encode_html="1"}}">
-	        </p>
+          <p class="field"><label for="c_site">{{tpl:lang Website}}
+          ({{tpl:lang optional}})&nbsp;:</label>
+          <input name="c_site" id="c_site" type="text" size="30" maxlength="255"
+          value="{{tpl:ContactMeSite encode_html="1"}}">
+          </p>
 
-	        <p class="field"><label for="c_subject">{{tpl:lang Subject}}&nbsp;:</label>
-	        <input name="c_subject" id="c_subject" type="text" size="30" maxlength="255"
-	        value="{{tpl:ContactMeSubject encode_html="1"}}">
-	        </p>
+          <p class="field"><label for="c_subject">{{tpl:lang Subject}}&nbsp;:</label>
+          <input name="c_subject" id="c_subject" type="text" size="30" maxlength="255"
+          value="{{tpl:ContactMeSubject encode_html="1"}}">
+          </p>
 
-	        <p style="display:none"><input name="f_mail" type="text" size="30"
-	        maxlength="255" value=""></p>
+          <p style="display:none"><input name="f_mail" type="text" size="30"
+          maxlength="255" value=""></p>
 
-	        <p class="field"><label for="c_message">{{tpl:lang Message}}&nbsp;:</label>
-	        <textarea name="c_message" id="c_message" cols="35"
-	        rows="7">{{tpl:ContactMeMessage raw="1" encode_html="1"}}</textarea>
-	        </p>
+          <p class="field"><label for="c_message">{{tpl:lang Message}}&nbsp;:</label>
+          <textarea name="c_message" id="c_message" cols="35"
+          rows="7">{{tpl:ContactMeMessage raw="1" encode_html="1"}}</textarea>
+          </p>
 
-	        <p><input type="submit" class="submit" value="{{tpl:lang send}}"></p>
-	      </fieldset>
-	    </form>
-	  </tpl:ContactMeIf>
-	  </div>
+          <p><input type="submit" class="submit" value="{{tpl:lang send}}"></p>
+        </fieldset>
+      </form>
+    </tpl:ContactMeIf>
+    </div>
 
   </div>
 </div> <!-- End #main -->
 
 <div id="alternate">
-	<div id="altmargin">
-	</div> <!-- End #altmargin -->
-	<div id="altcontent">
-	</div> <!-- End #altcontent -->
+  <div id="altmargin">
+  </div> <!-- End #altmargin -->
+  <div id="altcontent">
+  </div> <!-- End #altcontent -->
 </div>
 
 <div id="sidebar">
   <div id="blogmargin" class="margin">
   </div>
   <div id="blognav">
-	{{tpl:Widgets type="nav"}}
+  {{tpl:Widgets type="nav"}}
   </div> <!-- End #blognav -->
 
   <div id="blogextra">
-	{{tpl:Widgets type="extra"}}
+  {{tpl:Widgets type="extra"}}
   </div> <!-- End #blogextra -->
 </div>
 

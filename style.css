@@ -52,13 +52,16 @@ p {
 }
 
 img {
-  max-width: 100%;
+  max-inline-size: 100%;
 }
 
 blockquote {
   background: transparent url(index.php?tf=images/quote.gif) no-repeat scroll left top;
   margin: 1em;
-  padding: 0 0 0 70px;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 70px;
+  padding-inline-end: 0;
   font-style: italic;
 }
 
@@ -79,7 +82,10 @@ fieldset {
 }
 
 fieldset p {
-  margin: 0 0 0.5em 0;
+  margin-block-start: 0;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 
 input {
@@ -94,7 +100,7 @@ input:hover {
 }
 
 textarea {
-  width: 95%;
+  inline-size: 95%;
 }
 
 a {
@@ -128,7 +134,9 @@ pre {
 
 code {
   background: #ebedfa;
-  padding: 3px 5px 2px;
+  padding-block-start: 3px;
+  padding-block-end: 2px;
+  padding-inline: 5px;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
@@ -138,9 +146,15 @@ pre {
   overflow: auto;
   display: block;
   border: solid 1px #333333;
-  padding: 10px 20px 10px 30px;
-  margin: 1em 1em 1em 0;
-  text-align: left;
+  padding-block-start: 10px;
+  padding-block-end: 10px;
+  padding-inline-start: 30px;
+  padding-inline-end: 20px;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 1em;
+  text-align: start;
   line-height: 125%;
   white-space: pre-wrap;
   /* css-3 */
@@ -158,7 +172,7 @@ hr {
   background-color: #5967c2;
   color: #5967c2;
   border: 0 none;
-  height: 1px;
+  block-size: 1px;
   margin: 2em 10em;
 }
 
@@ -171,11 +185,11 @@ sub {
 }
 
 sup {
-  top: calc(-0.83 * (1em - 4px));
+  inset-block-start: calc(-0.83 * (1em - 4px));
 }
 
 sub {
-  top: calc(0.415 * (1em - 4px));
+  inset-block-start: calc(0.415 * (1em - 4px));
 }
 
 /* ------------------------------------------------------------
@@ -187,8 +201,8 @@ sub {
 ------------------------------------------------------------- */
 
 #top {
-  text-align: right;
-  margin-right: 40px;
+  text-align: end;
+  margin-inline-end: 40px;
 }
 
 #top h1 a {
@@ -240,8 +254,8 @@ sub {
 }
 
 #content-info {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 #content-info h2 {
@@ -249,12 +263,12 @@ sub {
 }
 
 #content-info .feed {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 
 #subcategories {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 #subcategories h3 {
@@ -262,8 +276,8 @@ sub {
 }
 
 #navlinks {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
   text-align: center;
   padding: 10px;
   background-color: #ebedfa;
@@ -273,9 +287,9 @@ sub {
 }
 
 .pagination {
-  margin-left: 320px;
-  margin-right: 160px;
-  margin-top: 96px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
+  margin-block-start: 96px;
   text-align: center;
   padding: 10px;
   background-color: #ebedfa;
@@ -289,11 +303,11 @@ sub {
 ------------------------------------------------------------- */
 
 .post {
-  padding-top: 64px;
+  padding-block-start: 64px;
 }
 
 .post.first {
-  padding-top: 32px;
+  padding-block-start: 32px;
 }
 
 .post-title,
@@ -303,36 +317,36 @@ sub {
 .post-content,
 .post-info-co,
 .read-it {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 .post-title,
 .post-info,
 .post-tags,
 .post-info-co {
-  text-align: left;
+  text-align: start;
 }
 
 .post-content-wrapper {
   position: relative;
-  margin-top: 36px;
+  margin-block-start: 36px;
 }
 
 .day-date {
   position: absolute;
-  text-align: right;
-  width: 285px;
+  text-align: end;
+  inline-size: 285px;
   margin: 0;
 }
 
 .post-date {
   position: absolute;
-  text-align: right;
-  width: 275px;
+  text-align: end;
+  inline-size: 275px;
   margin: 0;
-  padding-right: 20px;
-  border-right: 1px solid #5967c2;
+  padding-inline-end: 20px;
+  border-inline-end: 1px solid #5967c2;
 }
 
 .post-day {
@@ -351,9 +365,9 @@ sub {
 }
 
 .signature {
-  padding-top: 3em;
-  padding-bottom: 1em;
-  text-align: right;
+  padding-block-start: 3em;
+  padding-block-end: 1em;
+  text-align: end;
 }
 
 ul.post-tags {
@@ -363,37 +377,61 @@ ul.post-tags {
 
 ul.post-tags li {
   display: inline;
-  margin: 0 1.2em 0 0;
-  padding: 0 0 2px 22px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 1.2em;
+  padding-block-start: 0;
+  padding-block-end: 2px;
+  padding-inline-start: 22px;
+  padding-inline-end: 0;
   background: transparent url(index.php?tf=images/tag.png) no-repeat left top;
 }
 
 .post-info-co {
-  text-align: right;
+  text-align: end;
 }
 
 .comment_count {
-  margin: 0 0 0 1.2em;
-  padding: 0 0 0 1.8em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1.2em;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 1.8em;
+  padding-inline-end: 0;
   background: transparent url(index.php?tf=images/balloon.png) no-repeat left top;
 }
 
 .ping_count {
-  margin: 0 0 0 1.2em;
-  padding: 0 0 0 1.8em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1.2em;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 1.8em;
+  padding-inline-end: 0;
   background: transparent url(index.php?tf=images/chain.png) no-repeat left top;
 }
 
 .attach_count {
-  margin: 0 0 0 1.2em;
-  padding: 0 0 0 1.8em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1.2em;
+  margin-inline-end: 0;
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 1.8em;
+  padding-inline-end: 0;
   background: transparent url(index.php?tf=images/box.png) no-repeat left top;
 }
 
 #attachments {
-  margin-top: 24px;
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-block-start: 24px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 /* ------------------------------------------------------------
@@ -405,14 +443,14 @@ ul.post-tags li {
 #comment-form,
 #ping-url,
 #comments-feed {
-  margin-top: 48px;
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-block-start: 48px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 #comments dt,
 #pings dt {
-  margin-top: 32px;
+  margin-block-start: 32px;
   padding: 10px;
 }
 
@@ -425,16 +463,16 @@ ul.post-tags li {
 }
 
 .field label {
-  clear: left;
+  clear: inline-start;
   display: block;
-  float: left;
-  width: 13em;
+  float: inline-start;
+  inline-size: 13em;
 }
 
 #comments-feed {
-  margin-top: 24px;
-  margin-left: 336px;
-  margin-right: 160px;
+  margin-block-start: 24px;
+  margin-inline-start: 336px;
+  margin-inline-end: 160px;
 }
 
 /* ------------------------------------------------------------
@@ -442,23 +480,23 @@ ul.post-tags li {
 ------------------------------------------------------------- */
 
 #alternate {
-  margin-top: 48px;
+  margin-block-start: 48px;
 }
 
 #sidebar {
-  margin-top: 48px;
+  margin-block-start: 48px;
 }
 
 #blogmargin {
-  margin-top: 48px;
+  margin-block-start: 48px;
 }
 
 #blognav {
-  padding-top: 48px;
+  padding-block-start: 48px;
 }
 
 #blogextra {
-  padding-top: 24px;
+  padding-block-start: 24px;
 }
 
 #sidebar h2 {
@@ -467,7 +505,10 @@ ul.post-tags li {
 }
 
 #sidebar ul {
-  margin: 0 0 0 1.2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1.2em;
+  margin-inline-end: 0;
   padding: 0;
 }
 
@@ -487,7 +528,10 @@ ul.post-tags li {
   background-position-x: 0.5em;
   background-position-y: center;
   border: 1px solid #333;
-  padding: 0.25em 0.25em 0.25em 2.5em;
+  padding-block-start: 0.25em;
+  padding-block-end: 0.25em;
+  padding-inline-start: 2.5em;
+  padding-inline-end: 0.25em;
 }
 
 .syndicate ul {
@@ -503,13 +547,16 @@ de leur frequence - voir 9/ classes communes */
 ------------------------------------------------------------- */
 
 #footer div {
-  float: left;
-  width: 200px;
-  padding-bottom: 30px;
+  float: inline-start;
+  inline-size: 200px;
+  padding-block-end: 30px;
 }
 
 #footer ul {
-  margin: 0 0 0 1.2em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 1.2em;
+  margin-inline-end: 0;
   padding: 0;
 }
 
@@ -518,9 +565,9 @@ de leur frequence - voir 9/ classes communes */
 }
 
 #footer p.powered {
-  margin-top: 1em;
-  margin-right: 2em;
-  float: right;
+  margin-block-start: 1em;
+  margin-inline-end: 2em;
+  float: inline-end;
 }
 
 /* ------------------------------------------------------------
@@ -531,9 +578,9 @@ de leur frequence - voir 9/ classes communes */
 feed.png a piocher dans le theme par defaut par ex.) */
 
 .feed {
-  padding-left: 24px;
+  padding-inline-start: 24px;
   background: transparent url(index.php?tf=images/feed.png) no-repeat left center;
-  margin-left: -16px;
+  margin-inline-start: -16px;
 }
 
 /* tags dans le sidebar et dans la page les regroupant
@@ -544,9 +591,9 @@ feed.png a piocher dans le theme par defaut par ex.) */
 .tags ul li,
 .tags ul li a {
   display: inline;
-  width: auto;
-  padding-left: 0;
-  padding-right: 4px;
+  inline-size: auto;
+  padding-inline-start: 0;
+  padding-inline-end: 4px;
   background: transparent;
   line-height: 1.5em;
 }
@@ -612,19 +659,19 @@ feed.png a piocher dans le theme par defaut par ex.) */
 
 .tags p {
   background: transparent url(index.php?tf=images/tags.png) no-repeat left center;
-  padding-left: 22px;
+  padding-inline-start: 22px;
   line-height: 1.5em;
 }
 
 #sidebar .tags ul {
-  margin-left: 0;
+  margin-inline-start: 0;
 }
 
 /* messages */
 
 .message {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 /* messages d'erreur */
@@ -636,7 +683,7 @@ feed.png a piocher dans le theme par defaut par ex.) */
 }
 
 .error ul {
-  padding-left: 20px;
+  padding-inline-start: 20px;
 }
 
 .error li {
@@ -646,26 +693,26 @@ feed.png a piocher dans le theme par defaut par ex.) */
 /* exemples de ceux que j'ajoute souvent */
 
 .left {
-  float: left;
-  margin-right: 1em;
+  float: inline-start;
+  margin-inline-end: 1em;
 }
 
 .right {
-  float: right;
-  margin-left: 1em;
+  float: inline-end;
+  margin-inline-start: 1em;
 }
 
 .center {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
 }
 
 .left-text {
-  text-align: left;
+  text-align: start;
 }
 
 .right-text {
-  text-align: right;
+  text-align: end;
 }
 
 .center-text {
@@ -692,53 +739,53 @@ feed.png a piocher dans le theme par defaut par ex.) */
 ------------------------------------------------------------- */
 
 .dc-post .post {
-  padding-top: 32px;
+  padding-block-start: 32px;
 }
 
 .dc-archive .archive-content-wrapper {
   position: relative;
-  margin-top: 36px;
+  margin-block-start: 36px;
 }
 
 .dc-archive .archive-year {
   position: absolute;
-  text-align: right;
-  width: 275px;
+  text-align: end;
+  inline-size: 275px;
   margin: 0;
-  padding-right: 20px;
-  border-right: 1px solid #5967c2;
+  padding-inline-end: 20px;
+  border-inline-end: 1px solid #5967c2;
 }
 
 .dc-archive #content ul {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
   list-style-type: none;
   padding: 0;
 }
 
 .dc-archive-month .signature {
-  padding-top: 1em;
-  margin-bottom: 0;
+  padding-block-start: 1em;
+  margin-block-end: 0;
   line-height: 1em;
 }
 
 .dc-archive-month .post-info-co {
-  padding-bottom: 2em;
-  margin-top: 0;
+  padding-block-end: 2em;
+  margin-block-start: 0;
   line-height: 1em;
 }
 
 .dc-tags .all-tags {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
   list-style-type: none;
   padding: 0;
   font-size: 150%;
 }
 
 .dc-404 .content-inner {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 .dc-404 #content-info h2 {
@@ -777,17 +824,17 @@ feed.png a piocher dans le theme par defaut par ex.) */
 .contact-me a {
   background: transparent url(index.php?tf=images/mail.png) no-repeat scroll left bottom;
   line-height: 1.5em;
-  padding-left: 1.8em;
+  padding-inline-start: 1.8em;
 }
 
 .dc-contactme .content-inner p {
-  margin-left: 320px;
-  margin-right: 160px;
+  margin-inline-start: 320px;
+  margin-inline-end: 160px;
 }
 
 .dc-contactme .content-inner #comment-form {
-  margin-left: 0;
-  margin-top: 48px;
+  margin-inline-start: 0;
+  margin-block-start: 48px;
 }
 
 /* Plugin YASH */
