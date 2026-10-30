@@ -24,7 +24,7 @@ class FrontendBehaviors
      */
     public static function templateBeforeBlock(string $b, ArrayObject $attr): string
     {
-        if ($b === 'Entries' && isset($attr['exclude_current']) && $attr['exclude_current'] == 1) {
+        if ($b === 'Entries' && isset($attr['exclude_current']) && (bool) $attr['exclude_current']) {
             return
                 "<?php\n" .
                 '$params["sql"] .= "AND P.post_url != \'".App::frontend()->context()->posts->post_url."\' ";' . "\n" .
