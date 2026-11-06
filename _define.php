@@ -16,9 +16,9 @@ if (isset($this) && is_object($this) && method_exists($this, 'registerModule') &
         'Supin',
         'Supin based on Aorakit 1B by Kozlika',
         'Franck Paul',
-        '7.1',
+        '7.2',
         [
-            'date'     => '2026-04-05T11:53:08+0200',
+            'date'     => '2026-11-06T10:11:55+0100',
             'requires' => [['core', '2.36']],
             'type'     => 'theme',
             'overload' => true,
